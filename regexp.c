@@ -1,10 +1,10 @@
 /*
- * MicroRegExp — A lightweight regular expression library for C for microcontrollers
+ * MicroRegExp â€” A lightweight regular expression library for C for microcontrollers
  *
  * LIMITATIONS:
  *
  *  1. Lookarounds are not supported.
- *  2. Matching operates on bytes: UTF-8 character ranges such as [à-ÿ] are not supported.
+ *  2. Matching operates on bytes: UTF-8 character ranges such as [Ã -Ã¿] are not supported.
  *
  * A patched and extended fork of SLRE, originally based on the work
  * of Sergey Lyubka and subsequently maintained by Aquefir Consulting.
@@ -112,7 +112,7 @@ typedef struct {
 
 /* Put data into sbuf, reallocing for bigger size if needed.
  */
-void sb_put(sbuf *b, const char *s, size_t n) {
+static void sb_put(sbuf *b, const char *s, size_t n) {
 
   if (!b->oom) {
 
