@@ -1,4 +1,4 @@
-### PH8 : A further development of SLRE regexp engine
+### MicroRegExp : A further development of SLRE regexp engine
 
 MicroRegExp — A lightweight regular expression library for C for microcontrollers.
 Compiles and runs under Windows/Cygwin, Linux and FreeRTOS (ESP32)
